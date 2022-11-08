@@ -1,3 +1,16 @@
+# Connections:
+#   Connect the screen up as shown below using the
+#   physical pins indicated (physical pin on pico)
+
+#   Vin                              Pico VIN (36)     
+#   GND :                            Pico GND (28)     
+#   3V3 :    
+#   CLK : SPI Clock:                 Pico GP10 (14)
+#   SDO : Serial Output(MISO-tx)     Pico GP11 (15)
+#   SDI : Serial Input (MOSI-rx)     Pico GP12 (16)
+#   CS  :                            Pico GP13 (17)
+#   RDY :                             
+
 from machine import Pin, SPI
 import math
 

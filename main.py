@@ -13,8 +13,8 @@ from max31865 import MAX31865
 # https://www.youtube.com/watch?v=XuYUaOdO07I&ab_channel=FabioSouza
 
 # PORTS CONFIGURATION
-led = Pin(25,Pin.OUT) #INTERNAL LED
-led.value(1)
+led_internal = Pin(25,Pin.OUT) #INTERNAL LED
+led_internal.value(1)
 
 # average number of temperature values
 n_average_values = 7
@@ -82,7 +82,7 @@ def main():
     display.lcd.fill(0)
 
     #display.show_display_message(temperatura, timepassed)
-    led.toggle() #internal led toggle
+    led_internal.toggle() #internal led toggle
     time.sleep_ms(interval)
 
 #RUN
