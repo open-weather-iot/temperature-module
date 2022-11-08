@@ -10,3 +10,6 @@ Além disso, o projeto contém os arquivos Altium para criação da placa de 2 f
 <p align="center">
   <img src="https://github.com/open-weather-iot/temperature-module/blob/main/Projeto.jpg" width="350" alt="accessibility text">
 </p>
+<p align="center">
+  <img src="https://github.com/open-weather-iot/temperature-module/blob/main/schematic.png" width="200" alt="accessibility text">
+</p>
