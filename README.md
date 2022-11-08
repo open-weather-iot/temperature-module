@@ -6,4 +6,7 @@ Foi utilizado o VS Code junto com o MicroPython para programar o microcontrolado
 
 Além disso, o projeto contém os arquivos Altium para criação da placa de 2 faces do projeto e os arquivos Gerber e NC Drill para sua fabricação na pasta de "Outputs". Datasheets e documentos de referência também estão anexados no projeto.
 
-![alt text](https://github.com/open-weather-iot/temperature-module/blob/main/Projeto.jpg)
+
+<p align="center">
+  <img src="https://github.com/open-weather-iot/temperature-module/blob/main/Projeto.jpg" width="350" alt="accessibility text">
+</p>
