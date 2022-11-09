@@ -12,13 +12,13 @@
 #   Din - Serial Input (Mosi):       Pico GP7 (10)
 #   Clk - SPI Clock:                 Pico GP6 ( 9)
 #   Vcc:                             Pico 3V3 (36)
-#   BL :                             Pico GP9(12)
+#   BL :                             Pico GP9 (12)
 #   Gnd:                             Pico GND (38)
 
-# Referência
+# Reference
 # https://www.youtube.com/watch?v=DehRWwvWFuo&ab_channel=NerdCave
 
-import pcd8544_fb
+import src.pcd8544_fb as pcd8544_fb
 from machine import Pin, SPI
 
 class DisplayNokia:
@@ -49,5 +49,3 @@ class DisplayNokia:
             self.lcd.text('Tem:'+temp+'C',0,12, 1)
         self.lcd.clear()
         self.lcd.show()
- 
-  
