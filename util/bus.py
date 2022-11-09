@@ -20,9 +20,9 @@ class SPI:
 
         self.spi = machine.SPI(
             spi_id, 
-            baudrate=self.BUS_BAUDRATE, polarity=0, phase=1, firstbit=SPI.MSB, 
-            sck=Pin(sck_pin, Pin.OUT), 
-            mosi=Pin(mosi_pin, Pin.OUT), 
+            baudrate=self.BUS_BAUDRATE, polarity=0, phase=1, firstbit=machine.SPI.MSB, 
+            sck=Pin(sck_pin, Pin.OUT),
+            mosi=Pin(mosi_pin, Pin.OUT),
             miso=Pin(miso_pin, Pin.OUT),
         )
 
@@ -33,19 +33,19 @@ class SPI:
     def __exit__(self, exc_type, exc_value, exc_traceback):
         self.deselect()
 
-    def select():
+    def select(self):
         self.CS.value(SPI_SELECT)
 
-    def deselect():
+    def deselect(self):
         self.CS.value(SPI_DESELECT)
 
-    def read(nbytes, *, auto_select=False):
+    def read(self, nbytes, *, auto_select=False):
         if auto_select: self.select()
         value = self.spi.read(nbytes)
         if auto_select: self.deselect()
         return value
 
-    def write(buf, *, auto_select=False):
+    def write(self, buf, *, auto_select=False):
         if auto_select: self.select()
         self.spi.write(buf)
         if auto_select: self.deselect()

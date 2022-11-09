@@ -52,12 +52,12 @@ class MAX31865:
     # *Use GPIO Number as port pin number
     # Pela página 15 do datasheet do MAX31865, ele só funciona nos modos 1 e 3 de comunicação SPI
       
-    def __init__(self, spi_bus):
+    def __init__(self, spi_bus, *, wires_pt100):
         self.spi_bus = spi_bus
 
         # set configuration register
         config = self.MAX31865_CONFIG_BIAS_ON + self.MAX31865_CONFIG_AUTO + self.MAX31865_CONFIG_CLEAR_FAULT + self.MAX31865_CONFIG_50HZ_FILTER
-        if (wires == 3):
+        if (wires_pt100 == 3):
             config = config + self.MAX31865_CONFIG_3WIRE
 
         buf = bytearray(2)

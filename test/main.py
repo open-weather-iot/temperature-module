@@ -32,8 +32,8 @@ def main():
         # SENSORS MAPPING
         # INSIDE LOOP TO RESET THE MODULE IN CASE OF PIN READING ERRORS
         sensors = {
-          "t1": MAX31865(SPI(port=1)),
-          # "t2": MAX31865(SPI(port=2)),
+          "t1": MAX31865(SPI(port=1), wires_pt100=4),
+          # "t2": MAX31865(SPI(port=2), wires_pt100=4),
         }
 
         print('-----------------------')
