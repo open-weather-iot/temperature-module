@@ -13,3 +13,17 @@ Além disso, o projeto contém os arquivos Altium para criação da placa de 2 f
 <p align="center">
   <img src="img/schematic.png" width="400">
 </p>
+
+
+# Informações Extras:
+
+Configuração do Micro Python no VS Code
+    https://www.youtube.com/watch?v=XuYUaOdO07I&ab_channel=FabioSouza
+
+Para configurar um novo projeto de micropython no VSCode:
+    press F1
+Depois digite ou selecione:
+    Pico-W-Go: Configure Project
+
+Se você tiver problemas ao rodar os arquivos verifique o caminho relativo dos arquivos
+  Ex: from src.display_nokia import DisplayNokia
