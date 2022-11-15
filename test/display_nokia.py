@@ -18,7 +18,7 @@
 # Reference
 # https://www.youtube.com/watch?v=DehRWwvWFuo&ab_channel=NerdCave
 
-import src.pcd8544_fb as pcd8544_fb
+import test.pcd8544_fb as pcd8544_fb
 from machine import Pin, SPI
 
 class DisplayNokia:
