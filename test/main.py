@@ -2,8 +2,8 @@ from machine import Pin
 import time
 import utime
 from util.bus import SPI
-from src.display_nokia import DisplayNokia
 from src.max31865 import MAX31865
+from test.display_nokia import DisplayNokia
 
 # ---------------------------------------
 # ------------- SETUP    ----------------
