@@ -11,7 +11,7 @@ Além disso, o projeto contém os arquivos Altium para criação da PCB de 2 fac
 </p>
 
 <p align="center">
-  <img src="img/schematic.png" width="400">
+  <img src="img/schematic_final.png" width="400">
 </p>
 
 ## Informações Extras
